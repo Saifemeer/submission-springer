@@ -9,43 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
-      
-      // Function to toggle the dropdown visibility
       function toggleDropdown() {
         const dropdown = document.getElementById("accountDropdown");
         dropdown.classList.toggle("hidden");
       }
-    
-      // Function to handle user logout
+
       function logout() {
         alert("Logging out...");
-        window.location.href = "loginpage.html"; // Redirect to the login page
+        window.location.href = "loginpage.html";
       }
-    
-      // Dynamically display the username
-      const userName = "MuhammadSaifullah";
-      document.getElementById("usernameDisplay").innerText = userName;
-    
-      // Optional: Close dropdown if clicked outside
-      document.addEventListener("click", function(event) {
-        const dropdown = document.getElementById("accountDropdown");
-        const dropdownButton = document.getElementById("accountDropdownButton");
-    
-        if (!dropdown.contains(event.target) && !dropdownButton.contains(event.target)) {
-          dropdown.classList.add("hidden");
-        }
-      });
-    </script>
-    
-    
-   
-    <style>
-      
-      body {
-        /* font-family: 'Roboto', sans-serif; */
-        /* font-family: 'Georgia', serif; */
-        font-family: 'Roboto', sans-serif;
 
+      // Dynamically display the username
+// const userName = "MuhammadSaifullah";
+// document.getElementById("usernameDisplay").innerText = userName;
+
+// // Optional: Close dropdown if clicked outside
+// document.addEventListener("click", function(event) {
+//   const dropdown = document.getElementById("accountDropdown");
+//   const dropdownButton = document.getElementById("accountDropdownButton");
+
+//   if (!dropdown.contains(event.target) && !dropdownButton.contains(event.target)) {
+//     dropdown.classList.add("hidden");
+//   }
+// });
+    </script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
       }
       .marfa{
         font-family: marfa;
@@ -57,7 +47,6 @@
       <header class="flex items-center justify-between border-b border-gray-300 px-4 sm:px-6 md:px-10 py-5">
         <div class="flex items-center space-x-2">
           <img alt="Springer Nature SNAPP logo, blue circular icon with text" class="w-32 h-10 mr-4 object-contain" src="snapp-logo.svg"/>
-
           <div class="border-l border-gray-400 h-10 ml-4"></div>
           <h1 class="ml-4 text-3xl font-normal leading-tight">Progress in Orthodontics</h1>
         </div>
@@ -71,27 +60,22 @@
               <i class="fas fa-user text-2xl"></i>
               <span class="text-base">Account</span>
             </button>
-          
-            <!-- Dropdown Menu -->
             <div id="accountDropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg hidden z-10">
               <div class="block px-4 py-2 text-sm text-gray-700 border-b">
-                <!-- Username display -->
                 <span id="usernameDisplay">Saifullah</span>
               </div>
               <a href="#" onclick="logout()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
             </div>
           </div>
-          
         </nav>
       </header>
 
-     <section id="yourprivacy" class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500" style="height: 200px; padding-left: 1.5rem; padding-right: 1.5rem;">
-      <h1 class="text-white font-semibold text-2xl sm:text-2xl leading-snug text-center max-w-8xl tracking-wider mb-10 ">
-        The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
-      </h1>
-    </section>
-    
-      
+      <section id="yourprivacy" class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500" style="height: 200px; padding-left: 1.5rem; padding-right: 1.5rem;">
+        <h1 class="text-white font-semibold text-2xl sm:text-2xl leading-snug text-center max-w-8xl tracking-wider mb-10 ">
+          The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
+        </h1>
+      </section>
+
       <section class="flex flex-col lg:flex-row gap-6 px-6 sm:px-10 pt-0 pb-8 w-full relative z-10" style="margin-top: 10%;">
         <div class="flex-1 space-y-0 w-full relative z-40">
           <div id="private-policy" class="bg-white shadow border border-gray-200 p-6 w-full">
@@ -102,6 +86,7 @@
             <h3 class="font-semibold text-2xl leading-tight mb-2">Your submission has been transferred</h3>
             <p class="text-base text-gray-700 max-w-xl">Your manuscript and related files have been successfully transferred to the new journal.</p>
           </div>
+
           <section class="space-y-6">
             <section id="help-support" class=" border border-gray-300 bg-white p-8 rounded-md mt-6">
               <h2 class="font-semibold text-gray-900 mb-6 text-xl">Need help?</h2>
@@ -113,7 +98,6 @@
               <p class="text-gray-900 text-lg leading-relaxed">
                 For general enquiries, please look at our
                 <a href="mailto:Support.Springer@Oxfordmedia.com.au" class="text-teal-700 hover:underline text-lg">support information</a>
-
               </p>
             </section>
 
@@ -139,62 +123,57 @@
             <div class="space-y-4">
               <div class="flex justify-between items-center mb-4">
                 <h4 class="font-semibold text-lg">Progress so far</h4>
-               
               </div>
               <ul class="text-lg text-gray-600">
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
                   </div>
                   <span class="mb-5">Submission received</span> 
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
                   </div>
                   <span class="mb-5">Technical check</span>
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
                   </div>
                   <span class="mb-5">Editorial assignment</span>
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
                   </div>
                   <span class="mb-5">With editor</span>
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-1"></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-1"></div>
                   </div>
                   <span class="mb-5">Submission rejected</span>
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-1 "></div> <!-- Increased width of the line -->
+                    <div class="w-1 h-6 bg-teal-600 mt-1 "></div>
                   </div>
                   <span class="mb-5">To transfer</span>
                 </li>
                 <li class="flex items-center space-x-3">
                   <div class="flex flex-col items-center">
                     <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <!-- No vertical line for this item -->
                   </div>
                   <span>Transfer completed</span>
                 </li>
               </ul>
-              
-              
-              
             </div>
 
             <p class="text-base">Learn <a href="https://www.springernature.com/gp/snapp/submitting/how-to-submit#c23202304" class="text-teal-700 hover:underline">about our submission process</a></p>
@@ -210,8 +189,7 @@
               <div><p class="text-base text-gray-600">Type</p><p class="text-lg">Research</p></div>
               <div><p class="text-base text-gray-600">Journal</p><p class="text-lg">Progress in Orthodontics</p></div>
               <div><p class="font-normal text-base">Submission ID</p><p class="font-semibold break-words mt-1 text-lg">6f864bf5-1260-471a-affd-812dde473b97</p></div>
-              <div><p class="font-semibold text-lg">Journal</p><p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p></div>
-             
+              <div><p class="ont-normal text-base">Journal</p><p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p></div>
               <div><p class="font-normal text-base">Submission version</p><p class="font-semibold mt-1 text-lg">v.1.4</p></div>
               <div>
                 <p class="font-normal text-base">Manuscript File</p>
@@ -227,7 +205,6 @@
 
       <footer class="bg-[#003547] text-[#d9e9f2] px-6 py-8 mt-auto w-full">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-6 gap-y-2 text-base font-medium">
-          <!-- <a href="" class="underline text-lg">Your privacy choices/Manage cookies</a> -->
           <a href="mailto:Support.Springer@Oxfordmedia.com.au"class="underline text-lg">Help and support</a>
           <a href="https://submission.springernature.com/content-acquisition-privacy-policy" class="underline text-lg">Privacy policy</a>
           <a href="https://my-profile.springernature.com/terms-of-use" class="underline text-lg">Terms and conditions</a>
@@ -239,3 +216,4 @@
     </main>
   </body>
 </html>
+
