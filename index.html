@@ -9,16 +9,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
+      
+      // Function to toggle the dropdown visibility
       function toggleDropdown() {
-        const dropdown = document.getElementById('accountDropdown');
-        dropdown.classList.toggle('hidden');
+        const dropdown = document.getElementById("accountDropdown");
+        dropdown.classList.toggle("hidden");
       }
+    
+      // Function to handle user logout
+      function logout() {
+        alert("Logging out...");
+        window.location.href = "loginpage.html"; // Redirect to the login page
+      }
+    
+      // Dynamically display the username
+      const userName = "MuhammadSaifullah";
+      document.getElementById("usernameDisplay").innerText = userName;
+    
+      // Optional: Close dropdown if clicked outside
+      document.addEventListener("click", function(event) {
+        const dropdown = document.getElementById("accountDropdown");
+        const dropdownButton = document.getElementById("accountDropdownButton");
+    
+        if (!dropdown.contains(event.target) && !dropdownButton.contains(event.target)) {
+          dropdown.classList.add("hidden");
+        }
+      });
     </script>
+    
+    
    
     <style>
+      @font-face {
+        font-family: marfa; 
+        src: url('font/exFont-License.txt');
+      }
       body {
         /* font-family: 'Roboto', sans-serif; */
         font-family: 'Georgia', serif;
+
+      }
+      .marfa{
+        font-family: marfa;
       }
     </style>
   </head>
@@ -41,15 +73,22 @@
               <i class="fas fa-user text-2xl"></i>
               <span class="text-base">Account</span>
             </button>
+          
+            <!-- Dropdown Menu -->
             <div id="accountDropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg hidden z-10">
-              <a href="loginpage.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+              <div class="block px-4 py-2 text-sm text-gray-700 border-b">
+                <!-- Username display -->
+                <span id="usernameDisplay">Saifullah</span>
+              </div>
+              <a href="#" onclick="logout()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
             </div>
           </div>
+          
         </nav>
       </header>
 
      <section id="yourprivacy" class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500" style="height: 200px; padding-left: 1.5rem; padding-right: 1.5rem;">
-      <h1 class="text-white font-semibold text-2xl sm:text-2xl leading-snug text-center max-w-8xl tracking-wider mb-10">
+      <h1 class="text-white font-semibold text-2xl sm:text-2xl leading-snug text-center max-w-8xl tracking-wider mb-10 ">
         The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
       </h1>
     </section>
@@ -75,7 +114,8 @@
               </p>
               <p class="text-gray-900 text-lg leading-relaxed">
                 For general enquiries, please look at our
-                <a href="#help-support" class="text-teal-700 hover:underline text-lg">support information</a>.
+                <a href="mailto:Support.Springer@Oxfordmedia.com.au" class="text-teal-700 hover:underline text-lg">support information</a>
+
               </p>
             </section>
 
@@ -101,7 +141,7 @@
             <div class="space-y-4">
               <div class="flex justify-between items-center mb-4">
                 <h4 class="font-semibold text-lg">Progress so far</h4>
-                <a class="text-teal-600 text-lg underline hover:text-teal-900" href="#">Show history</a>
+               
               </div>
               <ul class="text-lg text-gray-600">
                 <li class="flex items-center space-x-3">
@@ -159,7 +199,7 @@
               
             </div>
 
-            <p class="text-base">Learn <a href="#" class="text-teal-700 hover:underline">about our submission process</a></p>
+            <p class="text-base">Learn <a href="https://www.springernature.com/gp/snapp/submitting/how-to-submit#c23202304" class="text-teal-700 hover:underline">about our submission process</a></p>
 
             <hr class="border-gray-300" />
 
@@ -171,13 +211,13 @@
               </div>
               <div><p class="text-base text-gray-600">Type</p><p class="text-lg">Research</p></div>
               <div><p class="text-base text-gray-600">Journal</p><p class="text-lg">Progress in Orthodontics</p></div>
-              <div><p class="text-base text-gray-600">Submission ID</p><p class="text-lg">123456789</p></div>
-              <div><p class="font-semibold text-lg">Journal</p><p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p></div>
               <div><p class="font-normal text-base">Submission ID</p><p class="font-semibold break-words mt-1 text-lg">6f864bf5-1260-471a-affd-812dde473b97</p></div>
+              <div><p class="font-semibold text-lg">Journal</p><p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p></div>
+             
               <div><p class="font-normal text-base">Submission version</p><p class="font-semibold mt-1 text-lg">v.1.4</p></div>
               <div>
                 <p class="font-normal text-base">Manuscript File</p>
-                <a href="file/my_cv.pdf" class="text-[#0a6ebd] underline inline-flex items-center mt-1" download>
+                <a href="file/Anonymized peer-review Main File (1) (1).docx" class="text-[#0a6ebd] underline inline-flex items-center mt-1" download>
                   Anonymized peer-review Main File (1).docx
                   <i class="fas fa-download ml-1"></i>
                 </a>
@@ -189,11 +229,11 @@
 
       <footer class="bg-[#003547] text-[#d9e9f2] px-6 py-8 mt-auto w-full">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-6 gap-y-2 text-base font-medium">
-          <a href="#yourprivacy" class="underline text-lg">Your privacy choices/Manage cookies</a>
-          <a href="#help-support" class="underline text-lg">Help and support</a>
-          <a href="#private-policy" class="underline text-lg">Privacy policy</a>
-          <a href="#terms" class="underline text-lg">Terms and conditions</a>
-          <a href="#accessibility" class="underline text-lg">Accessibility statement</a>
+          <!-- <a href="" class="underline text-lg">Your privacy choices/Manage cookies</a> -->
+          <a href="mailto:Support.Springer@Oxfordmedia.com.au"class="underline text-lg">Help and support</a>
+          <a href="https://submission.springernature.com/content-acquisition-privacy-policy" class="underline text-lg">Privacy policy</a>
+          <a href="https://my-profile.springernature.com/terms-of-use" class="underline text-lg">Terms and conditions</a>
+          <a href="https://www.springernature.com/gp/info/accessibility" class="underline text-lg">Accessibility statement</a>
         </div>
         <div class="max-w-7xl mx-auto mt-6 text-white font-extrabold text-2xl">SPRINGER NATURE</div>
         <div class="max-w-7xl mx-auto mt-1 text-[#d9e9f2] font-semibold text-lg">© 2025 Springer Nature</div>

@@ -9,7 +9,7 @@
     rel="stylesheet"
   />
   <style>
-    body {
+     body {
       font-family: 'Inter', sans-serif;
     }
   </style>
@@ -27,10 +27,10 @@
     <section class="bg-white max-w-sm w-full p-8">
       <h2 class="font-semibold text-lg text-[#1f1f1f] mb-2">Welcome back</h2>
       <p class="text-[#4a4a4a] mb-6 text-sm">
-        Logging in as <span class="font-normal">Mohammadainawi@gmail.com</span>
+        Logging in as <span class="font-normal">MohammadAinawi</span>
       </p>
 
-      <form class="space-y-3">
+      <form class="space-y-3" id="loginForm">
         <label for="password" class="block font-semibold text-xs text-[#1f1f1f] mb-1">
           Enter your password
         </label>
@@ -43,6 +43,7 @@
           />
           <button
             type="button"
+            id="togglePassword"
             class="text-[#0a4a6e] text-xs pr-3"
             aria-label="Show password"
           >
@@ -92,5 +93,31 @@
       </a>
     </section>
   </main>
+
+  <script>
+    // Show/Hide Password
+    const passwordInput = document.getElementById('password');
+    const toggleBtn = document.getElementById('togglePassword');
+
+    toggleBtn.addEventListener('click', () => {
+      const type = passwordInput.type === 'password' ? 'text' : 'password';
+      passwordInput.type = type;
+      toggleBtn.textContent = type === 'password' ? 'show' : 'hide';
+    });
+
+    // Form Submission
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Stop default form submission
+
+      const password = passwordInput.value.trim();
+      if (password !== "") {
+        // Redirect to another page (replace with actual page)
+        window.location.href = "index.html";
+      } else {
+        alert("Please enter your password.");
+      }
+    });
+  </script>
 </body>
 </html>
