@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Springer Nature Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#c7cbca] min-h-screen flex flex-col">
+  <header class="border-b border-[#0a4a6e]">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <h1 class="text-[#0a4a6e] font-extrabold text-xl leading-none select-none">
+        SPRINGER NATURE
+      </h1>
+    </div>
+  </header>
+
+  <main class="flex-grow flex justify-center items-center px-4 py-10">
+    <section class="bg-white max-w-sm w-full p-8">
+      <h2 class="font-semibold text-lg text-[#1f1f1f] mb-2">Welcome back</h2>
+      <p class="text-[#4a4a4a] mb-6 text-sm">
+        Logging in as <span class="font-normal">Mohammadainawi@gmail.com</span>
+      </p>
+
+      <form class="space-y-3">
+        <label for="password" class="block font-semibold text-xs text-[#1f1f1f] mb-1">
+          Enter your password
+        </label>
+        <div class="flex items-center border border-[#1f1f1f] rounded text-sm">
+          <input
+            id="password"
+            type="password"
+            class="flex-grow px-3 py-2 outline-none"
+            autocomplete="current-password"
+          />
+          <button
+            type="button"
+            class="text-[#0a4a6e] text-xs pr-3"
+            aria-label="Show password"
+          >
+            show
+          </button>
+        </div>
+
+        <a
+          href="#"
+          class="block text-[#0a4a6e] text-xs underline mt-1"
+          >Forgot your password?</a
+        >
+
+        <button
+          type="submit"
+          class="mt-6 w-full bg-[#006288] text-white font-semibold text-sm py-3 rounded-full flex justify-center items-center gap-2 hover:bg-[#004a63] transition"
+        >
+          Continue
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="#fff"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </form>
+
+      <a
+        href="#"
+        class="mt-6 inline-flex items-center text-[#0a4a6e] text-xs underline"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 mr-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#0a4a6e"
+          stroke-width="2"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        Try another method of logging in
+      </a>
+    </section>
+  </main>
+</body>
+</html>
