@@ -55,9 +55,9 @@ document.addEventListener("click", function(event) {
   </head>
   <body class="bg-white text-gray-900">
     <main class="absolute top-0 left-0 w-full max-w-full mx-auto">
-      <header class="flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 border-b border-gray-300 w-full overflow-hidden z-80">
-    
-        <div class="flex items-center space-x-3 min-w-0">
+      <header class="relative z-[1000] flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 border-b border-gray-300 w-full">
+
+  <div class="flex items-center space-x-3 min-w-0">
           <img src="snapp-logo.svg" alt="SNAPP logo" class="w-20 h-8 object-contain shrink-0" />
           <div class="border-l border-gray-400 h-6"></div>
           <h1 class="text-base sm:text-xl font-normal leading-tight truncate whitespace-nowrap overflow-hidden">
@@ -65,31 +65,37 @@ document.addEventListener("click", function(event) {
           </h1>
         </div>
     
-        <nav class="flex items-center space-x-4 text-sm font-normal text-teal-800 shrink-0 ml-4">
-          <button aria-label="Notifications" class="flex items-center space-x-1 hover:underline focus:outline-none shrink-0">
-            <i class="fas fa-bell text-xl"></i>
-            <span class="hidden sm:inline text-sm">Notifications</span>
-          </button>
-      
-          <div class="relative shrink-0">
-            <button aria-label="Account" onclick="toggleDropdown()" class="flex items-center space-x-1 hover:underline focus:outline-none">
-              <i class="fas fa-user text-xl"></i>
-              <span class="hidden sm:inline text-sm">Account</span>
-            </button>
-      
-            <div id="accountDropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg hidden z-10">
-              <div class="block px-4 py-2 text-sm text-gray-700 border-b">
-                <span id="usernameDisplay">Mohammad Ainawi</span>
-              </div>
-              <a href="#" onclick="logout()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
-            </div>
-          </div>
-        </nav>
+       <!-- Wrap in a relative container -->
+<div class="relative z-20">
+  <nav class="flex items-center space-x-4 text-sm font-normal text-teal-800 shrink-0 ml-4">
+    <button aria-label="Notifications" class="flex items-center space-x-1 hover:underline focus:outline-none shrink-0">
+      <i class="fas fa-bell text-xl"></i>
+      <span class="hidden sm:inline text-sm">Notifications</span>
+    </button>
+
+    <div class="relative shrink-0">
+      <button aria-label="Account" onclick="toggleDropdown()" class="flex items-center space-x-1 hover:underline focus:outline-none">
+        <i class="fas fa-user text-xl"></i>
+        <span class="hidden sm:inline text-sm">Account</span>
+      </button>
+
+      <!-- Increase z-index here -->
+      <div id="accountDropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg hidden z-50">
+ <div class="block px-4 py-2 text-sm text-gray-700 border-b">
+          <span id="usernameDisplay">Mohammad Ainawi</span>
+        </div>
+        <a href="#" onclick="logout()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
       </header>
       <section id="yourprivacy"
-  class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500 px-6 sm:px-6 md:px-10"
-  style="height: 200px;">
-  <h1 class="text-white font-semibold text-sm md:text-base lg:text-lg leading-snug text-center max-w-full sm:max-w-4xl md:max-w-7xl tracking-wider mb-10 px-2 whitespace-nowrap overflow-hidden text-ellipsis">
+      class="z-10 bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500 px-6 sm:px-6 md:px-10"
+      style="height: 200px;">
+      <h1 class="text-white font-semibold text-sm md:text-base lg:text-lg leading-snug text-center max-w-full sm:max-w-4xl md:max-w-7xl tracking-wider mb-20 px-2
+      whitespace-normal sm:whitespace-nowrap sm:overflow-hidden sm:text-ellipsis">
   The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
 </h1>
 </section>
