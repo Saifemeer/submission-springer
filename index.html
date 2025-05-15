@@ -22,11 +22,11 @@
         window.location.href = "loginpage.html";
       }
 
-      // Dynamically display the username
+      
 const userName = "MohammadAinawi";
 document.getElementById("usernameDisplay").innerText = userName;
 
-// Optional: Close dropdown if clicked outside
+
 document.addEventListener("click", function(event) {
   const dropdown = document.getElementById("accountDropdown");
   const dropdownButton = document.getElementById("accountDropdownButton");
@@ -45,41 +45,38 @@ document.addEventListener("click", function(event) {
 }
 
       body {
-        /* font-family: 'Roboto', sans-serif;
-        font-weight: 40 ; */
+       
         font-family: 'Georgia', serif;
-  /* font-family: 'Mafra', serif; */
+  
       }
-      /* #yourprivacy h1{
-        font-family: 'Mafra', serif; 
-      }
-      #left-div h3{
-        font-family: 'Mafra', serif; 
-      } */
-      /* aside h4{
-        font-family: 'Mafra', serif; 
-       } */
+      
       
     </style>
   </head>
   <body class="bg-white text-gray-900">
     <main class="absolute top-0 left-0 w-full max-w-full mx-auto">
-      <header class="flex items-center justify-between border-b border-gray-300 px-4 sm:px-6 md:px-10 py-5">
-        <div class="flex items-center space-x-2">
-          <img alt="Springer Nature SNAPP logo, blue circular icon with text" class="w-32 h-10 mr-4 object-contain" src="snapp-logo.svg"/>
-          <div class="border-l border-gray-400 h-10 ml-4"></div>
-          <h1 class="ml-4 text-3xl font-normal leading-tight">Progress in Orthodontics</h1>
+      <header class="flex items-center justify-between px-4 sm:px-6 md:px-10 py-4 border-b border-gray-300 w-full overflow-hidden z-80">
+    
+        <div class="flex items-center space-x-3 min-w-0">
+          <img src="snapp-logo.svg" alt="SNAPP logo" class="w-20 h-8 object-contain shrink-0" />
+          <div class="border-l border-gray-400 h-6"></div>
+          <h1 class="text-base sm:text-xl font-normal leading-tight truncate whitespace-nowrap overflow-hidden">
+            Progress in Orthodontics
+          </h1>
         </div>
-        <nav class="flex items-center space-x-6 text-sm font-normal text-teal-800">
-          <button aria-label="Notifications" class="flex items-center space-x-1 hover:underline focus:outline-none">
-            <i class="fas fa-bell text-2xl"></i>
-            <span class="text-base">Notifications</span>
+    
+        <nav class="flex items-center space-x-4 text-sm font-normal text-teal-800 shrink-0 ml-4">
+          <button aria-label="Notifications" class="flex items-center space-x-1 hover:underline focus:outline-none shrink-0">
+            <i class="fas fa-bell text-xl"></i>
+            <span class="hidden sm:inline text-sm">Notifications</span>
           </button>
-          <div class="relative inline-block text-left">
+      
+          <div class="relative shrink-0">
             <button aria-label="Account" onclick="toggleDropdown()" class="flex items-center space-x-1 hover:underline focus:outline-none">
-              <i class="fas fa-user text-2xl"></i>
-              <span class="text-base">Account</span>
+              <i class="fas fa-user text-xl"></i>
+              <span class="hidden sm:inline text-sm">Account</span>
             </button>
+      
             <div id="accountDropdown" class="absolute right-0 mt-2 w-40 bg-white border rounded-md shadow-lg hidden z-10">
               <div class="block px-4 py-2 text-sm text-gray-700 border-b">
                 <span id="usernameDisplay">Mohammad Ainawi</span>
@@ -89,137 +86,262 @@ document.addEventListener("click", function(event) {
           </div>
         </nav>
       </header>
+      <section id="yourprivacy"
+  class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500 px-6 sm:px-6 md:px-10"
+  style="height: 200px;">
+  <h1 class="text-white font-semibold text-sm md:text-base lg:text-lg leading-snug text-center max-w-full sm:max-w-4xl md:max-w-7xl tracking-wider mb-10 px-2 whitespace-nowrap overflow-hidden text-ellipsis">
+  The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
+</h1>
+</section>
 
-      <section id="yourprivacy" class="bg-gradient-to-r from-[#006CA4] to-[#003a57] flex justify-center items-center absolute left-0 right-0 border-t-4 border-blue-500" style="height: 200px; padding-left: 1.5rem; padding-right: 1.5rem;">
-        <h1 class="text-white font-semibold text-xl sm:text-xl leading-snug text-center max-w-8xl tracking-wider mb-10">
-          The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite
-        </h1>
-        
+<section
+  id="left-div"
+  class="flex flex-col lg:flex-row gap-6 px-4 sm:px-10 pt-0 pb-8 w-full relative z-10  mt-[50%] lg:mt-20"
+  style="margin-top: 7.5rem;" 
+>
+  <div class="flex-1 space-y-4 w-full relative z-40">
+    <div
+      id="private-policy"
+      class="bg-white shadow border border-gray-200 p-6 w-full rounded-md"
+    >
+      <div
+        class="flex items-center space-x-2 mb-2 text-teal-800 font-semibold text-sm sm:text-base uppercase"
+      >
+        <i class="fas fa-info-circle text-lg"></i>
+        <span>CURRENT STATUS</span>
+      </div>
+      <h3 class="font-semibold text-xl sm:text-2xl leading-tight mb-2">
+        Your submission has been accepted
+      </h3>
+      <p class="text-base text-gray-800 w-full">
+        Your manuscript and related files have been successfully transferred to
+        the new journal.
+      </p>
+    </div>
+
+    <section class="space-y-6">
+      <section
+        id="help-support"
+        class="border border-gray-300 bg-white p-6 sm:p-8 rounded-md mt-6"
+      >
+        <h2 class="font-semibold text-gray-900 mb-4 text-lg sm:text-xl">
+          Need help?
+        </h2>
+        <p class="text-gray-900 text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
+          If you have any questions about this submission, you can
+          <a
+            href="mailto:kristine.lamar@springernature.com"
+            class="text-teal-700 hover:underline"
+            >email the Editorial Office</a
+          >
+          (kristine.lamar@springernature.com).
+        </p>
+        <p class="text-gray-900 text-base sm:text-lg leading-relaxed">
+          For general enquiries, please look at our
+          <a
+            href="mailto:Support.Springer@Oxfordmedia.com.au"
+            class="text-teal-700 hover:underline"
+            >support information</a
+          >
+        </p>
       </section>
 
-      <section id="left-div" class="flex flex-col lg:flex-row gap-6 px-6 sm:px-10 pt-0 pb-8 w-full relative z-10" style="margin-top: 10%;">
-        <div class="flex-1 space-y-0 w-full relative z-40">
-          <div id="private-policy" class="bg-white shadow border border-gray-200 p-6 w-full">
-            <div class="flex items-center space-x-2 mb-2 text-teal-800 font-semibold text-base uppercase">
-              <i class="fas fa-info-circle text-lg"></i>
-              <span>CURRENT STATUS</span>
-            </div>
-            <h3 class="font-[550] text-2xl leading-tight mb-2">Your submission has been accepted</h3>
-           <p class="text-base text-gray-800 w-full ">Your manuscript and related files have been successfully transferred to the new journal.</p>
-          </div>
-
-          <section class="space-y-6">
-            <section id="help-support" class=" border border-gray-300 bg-white p-8 rounded-md mt-6">
-              <h2 class="font-semibold text-gray-900 mb-6 text-xl">Need help?</h2>
-              <p class="text-gray-900 text-lg mb-6 leading-relaxed">
-                If you have any questions about this submission, you can
-                <a href="mailto:kristine.lamar@springernature.com" class="text-teal-700 hover:underline text-lg">email the Editorial Office</a>
-                (kristine.lamar@springernature.com).
-              </p>
-              <p class="text-gray-900 text-lg leading-relaxed">
-                For general enquiries, please look at our
-                <a href="mailto:Support.Springer@Oxfordmedia.com.au" class="text-teal-700 hover:underline text-lg">support information</a>
-              </p>
-            </section>
-
-            <section id="accessibility" class="bg-gray-100 p-8 rounded-md text-center">
-              <h3 class="font-semibold text-gray-900 mb-4 text-base">How was your experience today?</h3>
-              <div class="flex justify-center gap-5 mb-4">
-                <button aria-label="Awful" class="border border-gray-300 rounded-md w-12 h-12 flex items-center justify-center text-gray-700 text-xl hover:border-teal-700 focus:border-teal-700" type="button"><i class="far fa-frown"></i></button>
-                <button aria-label="Bad" class="border border-gray-300 rounded-md w-12 h-12 flex items-center justify-center text-gray-700 text-xl hover:border-teal-700 focus:border-teal-700" type="button"><i class="far fa-frown-open"></i></button>
-                <button aria-label="OK" class="border border-gray-300 rounded-md w-12 h-12 flex items-center justify-center text-gray-700 text-xl hover:border-teal-700 focus:border-teal-700" type="button"><i class="far fa-meh"></i></button>
-                <button aria-label="Good" class="border border-gray-300 rounded-md w-12 h-12 flex items-center justify-center text-gray-700 text-xl hover:border-teal-700 focus:border-teal-700" type="button"><i class="far fa-smile"></i></button>
-                <button aria-label="Great" class="border border-gray-300 rounded-md w-12 h-12 flex items-center justify-center text-gray-700 text-xl hover:border-teal-700 focus:border-teal-700" type="button"><i class="far fa-grin"></i></button>
-              </div>
-              <div class="flex justify-center gap-8 text-sm text-gray-700 font-normal mb-5">
-                <span>Awful</span><span>Bad</span><span>OK</span><span>Good</span><span>Great</span>
-              </div>
-              <button type="button" class="border border-teal-700 text-teal-700 text-sm font-semibold rounded-full px-6 py-2 hover:bg-teal-700 hover:text-white transition-colors">Send feedback</button>
-            </section>
-          </section>
+      <section
+        id="accessibility"
+        class="bg-gray-100 p-6 sm:p-8 rounded-md text-center"
+      >
+        <h3 class="font-semibold text-gray-900 mb-4 text-base sm:text-lg">
+          How was your experience today?
+        </h3>
+        <div
+          class="flex justify-center gap-3 sm:gap-5 mb-4 flex-wrap sm:flex-nowrap"
+        >
+          <button
+            aria-label="Awful"
+            class="border border-gray-300 rounded-md w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-gray-700 text-lg sm:text-xl hover:border-teal-700 focus:border-teal-700"
+            type="button"
+          >
+            <i class="far fa-frown"></i>
+          </button>
+          <button
+            aria-label="Bad"
+            class="border border-gray-300 rounded-md w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-gray-700 text-lg sm:text-xl hover:border-teal-700 focus:border-teal-700"
+            type="button"
+          >
+            <i class="far fa-frown-open"></i>
+          </button>
+          <button
+            aria-label="OK"
+            class="border border-gray-300 rounded-md w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-gray-700 text-lg sm:text-xl hover:border-teal-700 focus:border-teal-700"
+            type="button"
+          >
+            <i class="far fa-meh"></i>
+          </button>
+          <button
+            aria-label="Good"
+            class="border border-gray-300 rounded-md w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-gray-700 text-lg sm:text-xl hover:border-teal-700 focus:border-teal-700"
+            type="button"
+          >
+            <i class="far fa-smile"></i>
+          </button>
+          <button
+            aria-label="Great"
+            class="border border-gray-300 rounded-md w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-gray-700 text-lg sm:text-xl hover:border-teal-700 focus:border-teal-700"
+            type="button"
+          >
+            <i class="far fa-grin"></i>
+          </button>
         </div>
-
-        <aside id="terms" class="aside w-full lg:w-1/3 bg-white shadow border border-gray-200 p-6 max-w-full relative z-20">
-          <div class="space-y-6">
-            <div class="space-y-4">
-              <div class="flex justify-between items-center mb-4">
-                <h4 class="font-semibold text-lg">Progress so far</h4>
-             </div>
-              <ul class="text-lg text-gray-600">
-                <li class="flex items-center space-x-3">
-                  <div class="flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
-                  </div>
-                  <span class="mb-5">Submission received</span> 
-                </li>
-                <li class="flex items-center space-x-3">
-                  <div class="flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
-                  </div>
-                  <span class="mb-5">Technical check</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                  <div class="flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
-                  </div>
-                  <span class="mb-5">Editorial assignment</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                  <div class="flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"></span>
-                    <div class="w-1 h-6 bg-teal-600 mt-1"></div>
-                  </div>
-                  <span class="mb-5">With editor</span>
-                </li>
-                <li class="flex items-center space-x-3">
-                  <div class="flex flex-col items-center">
-                    <span class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0 mb-5"></span>
-                    </div>
-                  <span class="mb-5">Submission accepted</span>
-                </li>
-                 </ul>
-            </div>
-
-            <p class="text-base">Learn <a href="https://www.springernature.com/gp/snapp/submitting/how-to-submit#c23202304" class="text-teal-700 hover:underline">about our submission process</a></p>
-
-            <hr class="border-gray-300" />
-
-            <div class="space-y-3">
-              <h3 class="font-semibold text-gray-900 text-lg">Your submission</h3>
-              <div>
-                <p class="text-base text-gray-600">Title</p>
-                <p class="font-semibold text-gray-900 text-lg leading-snug">The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance for Posterior Crossbite</p>
-              </div>
-              <div><p class="text-base text-gray-600">Type</p><p class="text-lg">Research</p></div>
-              <div><p class="text-base text-gray-600">Journal</p><p class="text-lg">Progress in Orthodontics</p></div>
-              <div><p class="font-normal text-base">Submission ID</p><p class="font-semibold break-words mt-1 text-lg">6f864bf5-1260-471a-affd-812dde473b97</p></div>
-              <div><p class="ont-normal text-base">Journal</p><p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p></div>
-              <div><p class="font-normal text-base">Submission version</p><p class="font-semibold mt-1 text-lg">v.1.4</p></div>
-              <div>
-                <p class="font-normal text-base">Manuscript File</p>
-                <a href="file/Anonymized peer-review Main File (1) (1).docx" class="text-[#0a6ebd] underline inline-flex items-center mt-1" download>
-                  Anonymized peer-review Main File (1).docx
-                  <i class="fas fa-download ml-1"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </aside>
+        <div
+          class="flex justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-gray-700 font-normal mb-5 flex-wrap"
+        >
+          <span>Awful</span>
+          <span>Bad</span>
+          <span>OK</span>
+          <span>Good</span>
+          <span>Great</span>
+        </div>
+        <button
+          type="button"
+          class="border border-teal-700 text-teal-700 text-xs sm:text-sm font-semibold rounded-full px-4 sm:px-6 py-1 sm:py-2 hover:bg-teal-700 hover:text-white transition-colors"
+        >
+          Send feedback
+        </button>
       </section>
+    </section>
+  </div>
 
-      <footer class="bg-[#003547] text-[#d9e9f2] px-6 py-8 mt-auto w-full">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-6 gap-y-2 text-base font-medium">
-          <a href="mailto:Support.Springer@Oxfordmedia.com.au"class="underline text-lg">Help and support</a>
-          <a href="https://submission.springernature.com/content-acquisition-privacy-policy" class="underline text-lg">Privacy policy</a>
-          <a href="https://my-profile.springernature.com/terms-of-use" class="underline text-lg">Terms and conditions</a>
-          <a href="https://www.springernature.com/gp/info/accessibility" class="underline text-lg">Accessibility statement</a>
+  <aside
+    id="terms"
+    class="aside w-full lg:w-1/3 bg-white shadow border border-gray-200 p-6 max-w-full relative z-20 rounded-md"
+  >
+    <div class="space-y-6">
+      <div class="space-y-4">
+        <div class="flex justify-between items-center mb-4">
+          <h4 class="font-semibold text-lg">Progress so far</h4>
         </div>
-        <div class="max-w-7xl mx-auto mt-6 text-white font-extrabold text-2xl">SPRINGER NATURE</div>
-        <div class="max-w-7xl mx-auto mt-1 text-[#d9e9f2] font-semibold text-lg">© 2025 Springer Nature</div>
-      </footer>
+        <ul class="text-base text-gray-600 space-y-4">
+          <li class="flex items-center space-x-3">
+            <div class="flex flex-col items-center">
+              <span
+                class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"
+              ></span>
+              <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
+            </div>
+            <span>Submission received</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="flex flex-col items-center">
+              <span
+                class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"
+              ></span>
+              <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
+            </div>
+            <span>Technical check</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="flex flex-col items-center">
+              <span
+                class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"
+              ></span>
+              <div class="w-1 h-6 bg-teal-600 mt-0.5 mb-0.5"></div>
+            </div>
+            <span>Editorial assignment</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="flex flex-col items-center">
+              <span
+                class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0"
+              ></span>
+              <div class="w-1 h-6 bg-teal-600 mt-1"></div>
+            </div>
+            <span>With editor</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <div class="flex flex-col items-center">
+              <span
+                class="w-4 h-4 rounded-full bg-teal-600 inline-block flex-shrink-0 mb-5"
+              ></span>
+            </div>
+            <span>Submission accepted</span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="text-base">
+        Learn
+        <a
+          href="https://www.springernature.com/gp/snapp/submitting/how-to-submit#c23202304"
+          class="text-teal-700 hover:underline"
+          >about our submission process</a
+        >
+      </p>
+
+      <hr class="border-gray-300" />
+
+      <div class="space-y-3">
+        <h3 class="font-semibold text-gray-900 text-lg">Your submission</h3>
+        <div>
+          <p class="text-base text-gray-600">Title</p>
+          <p class="font-semibold text-gray-900 text-lg leading-snug">
+            The Role of Upper Jaw Expansion in Adjusting TMJ and Occlusal Balance
+            for Posterior Crossbite
+          </p>
+        </div>
+        <div>
+          <p class="text-base text-gray-600">Type</p>
+          <p class="text-lg">Research</p>
+        </div>
+        <div>
+          <p class="text-base text-gray-600">Journal</p>
+          <p class="text-lg">Progress in Orthodontics</p>
+        </div>
+        <div>
+          <p class="font-normal text-base">Submission ID</p>
+          <p
+            class="font-semibold break-words mt-1 text-lg"
+          >
+            6f864bf5-1260-471a-affd-812dde473b97
+          </p>
+        </div>
+        <div>
+          <p class="font-normal text-base">Journal</p>
+          <p class="font-semibold mt-1 text-lg">Progress in Orthodontics</p>
+        </div>
+        <div>
+          <p class="font-normal text-base">Submission version</p>
+          <p class="font-semibold mt-1 text-lg">v.1.4</p>
+        </div>
+        <div>
+          <p class="font-normal text-base">Manuscript File</p>
+          <a
+            href="file/Anonymized peer-review Main File (1) (1).docx"
+            class="text-[#0a6ebd] underline inline-flex items-center mt-1"
+            download
+          >
+            Anonymized peer-review Main File (1).docx
+            <i class="fas fa-download ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+
+<footer class="bg-[#003547] text-[#d9e9f2] px-6 py-8 mt-auto w-full">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row flex-wrap justify-center gap-x-6 gap-y-2 text-base font-medium">
+      <a href="mailto:Support.Springer@Oxfordmedia.com.au" class="underline text-lg">Help and support</a>
+      <a href="https://submission.springernature.com/content-acquisition-privacy-policy" class="underline text-lg">Privacy policy</a>
+      <a href="https://my-profile.springernature.com/terms-of-use" class="underline text-lg">Terms and conditions</a>
+      <a href="https://www.springernature.com/gp/info/accessibility" class="underline text-lg">Accessibility statement</a>
+  </div>
+  
+  <div class="max-w-7xl mx-auto mt-6 text-white font-extrabold text-2xl">SPRINGER NATURE</div>
+  
+  <div class="max-w-7xl mx-auto mt-1 text-[#d9e9f2] font-semibold text-lg">© 2025 Springer Nature</div>
+</footer>
+
     </main>
   </body>
 </html>
